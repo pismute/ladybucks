@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script src="ext/jquery-1.7.1.js"></script>
+        <script src="ext/underscore.js"></script>
+        <script src="ext/backbone.js"></script>
+        <script src="ext/backbone.local-storage.js"></script>
+        <script src="who.js"></script>
+
+        <script>
+            var who= new Who({id:'who'});
+
+            chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+
+                Backbone.sync('read', who, {
+                    success: function(data) {
+                        who.set('name', data.name);
+                        who.set('jumin1', data.jumin1);
+                        who.set('jumin2', data.jumin2);
+                    }
+                    , error: function(msg) {
+                        //ignoring record not found
+                        //alert( msg );
+                        /* for test
+                        who.set('name', 'name');
+                        who.set('jumin1', 'jumin1');
+                        who.set('jumin2', 'jumin2');
+                        */
+                    }
+                });
+
+                sendResponse( {
+                    data: who
+                });
+            });
+        </script>
+    </head>
+</html>
+
