@@ -1,8 +1,11 @@
 {
     "name": "Ladybucks"
     , "icons": {
-        "48": "icon-48.png"
-        , "64": "icon-64.png"
+        "16": "logo_16.png"
+        , "32": "logo_32.png"
+        , "48": "logo_48.png"
+        , "64": "logo_64.png"
+        , "128": "logo_128.png"
     }
     , "permissions": [
         "tabs"
@@ -31,7 +34,7 @@
     ]
     ,   "page_action": {
         "default_name": "ladybucks"
-        , "default_icon": "icon-16.png"
+        , "default_icon": "logo_16.png"
     }
     , "version": "0.3"
     , "description": "Automatically login to Starbucks WI-FI"
