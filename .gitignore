@@ -1,5 +1,4 @@
-*.swp
-*~
-.#*
-*.crx
-.idea
+/node_modules/
+npm-debug.log
+/.idea/
+/out/

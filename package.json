@@ -1,0 +1,44 @@
+{
+  "name": "ladybucks",
+  "description": "A Chrome Extension for Starbuck Korea Wi-fi",
+  "version": "0.1.0",
+  "homepage": "https://github.com/pismute/ladybucks",
+  "author": {
+    "name": "Changwoo Park",
+    "email": "pismute@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pismute/ladybucks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pismute/ladybucks/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/pismute/ladybucks/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "out/lib/ladybucks",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-crx": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-coffee": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-coffeelint": "latest",
+    "grunt-simple-mocha": "latest",
+    "should": "latest",
+    "mocha-cakes": "latest",
+    "grunt": "~0.4.1"
+  },
+  "keywords": []
+}
