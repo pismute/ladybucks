@@ -89,6 +89,11 @@ module.exports = (grunt)->
         dest: 'out/'
         filename: '<%= pkg.name %>-<%= pkg.version %>-dev.crx'
         privateKey: 'ladybucks.pem'
+    zip:
+      dev:
+        cwd: 'out/lib/'
+        src: 'out/lib/**.*',
+        dest: 'out/<%= pkg.name %>-<%= pkg.version %>-dev.zip',
 
   # plugins.
   grunt.loadNpmTasks 'grunt-simple-mocha'
@@ -99,6 +104,8 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-jshint'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-crx'
+  grunt.loadNpmTasks 'grunt-zip'
+
 
   # tasks.
   grunt.registerTask 'compile', [
@@ -107,6 +114,7 @@ module.exports = (grunt)->
     'copy'
     'coffee'
     'crx'
+    'zip'
   ]
 
   grunt.registerTask 'test', [
