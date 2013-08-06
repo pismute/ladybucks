@@ -1,7 +1,7 @@
 {
   "name": "Ladybucks"
   , "manifest_version": 2
-  , "version": "0.4.0"
+  , "version": "0.4.2"
   , "description": "Automatically login to Starbucks WI-FI"
   , "icons": {
     "16": "logo_16.png"
