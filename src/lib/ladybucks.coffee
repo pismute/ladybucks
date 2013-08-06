@@ -22,5 +22,8 @@ $('input[name=phone1]').val( factory.phone1() )
 $('input[name=phone2]').val( factory.phone2() )
 $('input[name=phone3]').val( factory.phone3() )
 
-goAct()
+$('form[name=pageForm]')
+  .prop('target', 'actFrm')
+  .prop('action', 'loginAct.jsp')
+  .submit()
 
