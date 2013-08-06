@@ -92,7 +92,7 @@ module.exports = (grunt)->
     zip:
       dev:
         cwd: 'out/lib/'
-        src: 'out/lib/**.*',
+        src: 'out/lib/**',
         dest: 'out/<%= pkg.name %>-<%= pkg.version %>-dev.zip',
 
   # plugins.
